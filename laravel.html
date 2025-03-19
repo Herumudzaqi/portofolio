@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengertian dan Instalasi Laravel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #cccccc;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengertian dan Instalasi Laravel</h1>
+
+        <h2>Pengertian Laravel</h2>
+        <p>
+            Laravel adalah framework PHP open-source yang dirancang untuk pengembangan aplikasi web. Laravel menyediakan struktur yang rapi dan elegan untuk memudahkan pengembang dalam membangun aplikasi web yang aman, cepat, dan mudah dikelola. Framework ini mengikuti pola arsitektur MVC (Model-View-Controller) dan dilengkapi dengan berbagai fitur seperti routing, ORM (Object-Relational Mapping), migrasi database, dan autentikasi.
+        </p>
+
+        <h2>Keunggulan Laravel</h2>
+        <ul>
+            <li><strong>Mudah Dipelajari:</strong> Laravel memiliki dokumentasi yang lengkap dan komunitas yang besar, sehingga memudahkan pengembang pemula untuk mempelajarinya.</li>
+            <li><strong>Fitur Lengkap:</strong> Laravel menyediakan banyak fitur bawaan seperti Eloquent ORM, Blade Templating Engine, dan Artisan CLI.</li>
+            <li><strong>Keamanan:</strong> Laravel dilengkapi dengan sistem keamanan yang kuat, termasuk proteksi terhadap SQL injection, XSS, dan CSRF.</li>
+            <li><strong>Skalabilitas:</strong> Laravel mendukung pengembangan aplikasi skala kecil hingga besar.</li>
+        </ul>
+
+        <h2>Instalasi Laravel</h2>
+        <p>
+            Berikut adalah langkah-langkah untuk menginstal Laravel di lingkungan pengembangan Anda:
+        </p>
+
+        <h3>1. Persyaratan Sistem</h3>
+        <p>
+            Pastikan sistem Anda memenuhi persyaratan berikut:
+        </p>
+        <ul>
+            <li>PHP versi 8.0 atau lebih baru.</li>
+            <li>Composer (dependency manager untuk PHP).</li>
+            <li>Ekstensi PHP yang diperlukan seperti OpenSSL, PDO, Mbstring, dan lainnya.</li>
+        </ul>
+
+        <h3>2. Instalasi Composer</h3>
+        <p>
+            Jika Anda belum memiliki Composer, Anda dapat menginstalnya dengan menjalankan perintah berikut di terminal:
+        </p>
+        <code>
+            php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"<br>
+            php composer-setup.php<br>
+            php -r "unlink('composer-setup.php');"<br>
+            mv composer.phar /usr/local/bin/composer
+        </code>
+
+        <h3>3. Membuat Proyek Laravel Baru</h3>
+        <p>
+            Setelah Composer terinstal, Anda dapat membuat proyek Laravel baru dengan perintah berikut:
+        </p>
+        <code>
+            composer create-project --prefer-dist laravel/laravel nama-proyek
+        </code>
+        <p>
+            Ganti <code>nama-proyek</code> dengan nama folder proyek Anda.
+        </p>
+
+        <h3>4. Menjalankan Server Pengembangan</h3>
+        <p>
+            Setelah proyek berhasil dibuat, masuk ke direktori proyek dan jalankan server pengembangan Laravel dengan perintah:
+        </p>
+        <code>
+            cd nama-proyek<br>
+            php artisan serve
+        </code>
+        <p>
+            Server akan berjalan di <code>http://localhost:8000</code>. Buka alamat tersebut di browser untuk melihat halaman default Laravel.
+        </p>
+
+        <h2>Kesimpulan</h2>
+        <p>
+            Laravel adalah framework PHP yang powerful dan mudah digunakan untuk pengembangan aplikasi web modern. Dengan fitur-fitur yang lengkap dan dokumentasi yang baik, Laravel menjadi pilihan utama bagi banyak pengembang. Instalasi Laravel juga relatif mudah, terutama dengan bantuan Composer. Selamat mencoba!
+        </p>
+    </div>
+</body>
+</html>
